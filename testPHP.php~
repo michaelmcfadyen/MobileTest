@@ -1,0 +1,15 @@
+<?php
+//get the q parameter from URL
+$q=$_GET["q"];
+var_dump($q);
+
+$json = file_get_contents("./users.json");
+
+$array = json_decode($json, true);
+var_dump($array);
+
+foreach($array['users'] as $user){
+	echo $user['username']."\n";
+	echo $user['password']."\n";
+
+}

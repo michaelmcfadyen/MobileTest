@@ -1,0 +1,15 @@
+<html>
+<head>
+</head>
+<body>
+
+<div class='test'>
+	<form class='signin'>
+		<input type='text' name='username'>
+		<input type='password' name='password'>
+	</form>
+</div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="testJson.js"></script>
+</html>

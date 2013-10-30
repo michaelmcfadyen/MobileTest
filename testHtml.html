@@ -1,0 +1,41 @@
+<html>
+<head>
+</head>
+<body>
+
+<div class='login'>
+	<h>Login</h>
+	<p class='name'><p>
+	<form class='signin'>
+		<p>Username</p>
+		<input type='text' name='username'>
+		<p>Password</p>
+		<input type='password' name='password'>
+		<input class="send" type="submit" value="LogIn">
+	</form>
+	<p class='incorrect' style='display:none;'>Incorrect username/password</p>
+	<button class='signout' style='display:none;'>Log Out</button>
+</div>
+<br><br>
+<div class='signup'>
+	<h>Sign Up</h>
+	<form class='signupform'>
+		<p>Enter a Username</p>
+		<input type='text' name='username'>
+		<p class='errorusername' style='display:none;'>Username already exists</p>
+		<p>Enter a Password</p>
+		<input type='password' name='password'>
+		<p>Enter the password again</p>
+		<input type='password' name='passwordagain'>
+		<p class='errorpass' style='display:none;'>Passwords do not match</p>
+		<input class='send' type='submit' value='Sign Up'>
+	</form>
+</div>
+
+<div class='flags'>
+
+</div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="testJson.js"></script>
+</html>

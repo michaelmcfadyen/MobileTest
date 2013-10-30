@@ -1,0 +1,38 @@
+$('.signin').submit(function () {
+	sendForm();
+        return false;
+});
+
+
+function sendForm(){
+	var username = $('input[name=username]').val();
+	var password = $('input[name=password]').val();
+	if(!username || !password){
+		if(!username){
+			$('input[name=username]').val("Please enter a username");
+			$('input[name=username]').css("border-color","#FF0000");
+		}
+		if(!password){
+			$('input[name=password]').css("border-color","#FF0000");
+		}
+		return;
+	}
+	if (window.XMLHttpRequest)
+        {// code for IE7+, Firefox, Chrome, Opera, Safari
+            xmlhttp=new XMLHttpRequest();
+        }
+        else
+        {// code for IE6, IE5
+            xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlhttp.onreadystatechange=function(){
+            if (xmlhttp.readyState==4 && xmlhttp.status==200)
+            {
+                if(xmlhttp.responseText == 1){
+
+                }
+            }
+        }
+        xmlhttp.open("GET","./testPHP.php?q="+username+"\n"+password ,true);
+        xmlhttp.send();
+}

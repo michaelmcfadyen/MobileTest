@@ -1,10 +1,9 @@
 html,body{
 	min-width:100%;
 	min-height:100%;
-    	font-family: 'Dancing Script', Georgia, Times, serif;
+    	font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
    	font-size: 20px;
    	line-height: 25px;
-    	background:url("../imgs/ticks.png") repeat 0 0;
     	color:#555555;
 }
 

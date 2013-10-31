@@ -16,11 +16,11 @@ function flags(){
 	var flags = getFlags();
 
 	for(var i = 0; i < flags.length; i++){
-		var image = flags[i]["image"];
+		var imageName = flags[i]["image"];
 		var name = flags[i]["name"];
-		var className = name + " flag span4";
-		$('.flags').append('<div class='+className+' span4>');
-		$('.'+name).append("<img src=./imgs/flags/"+image+" alt="+name+">");
+		$('.grid').append('<div class='+name+'>');
+		$('.'+name).addClass("col-1-4 flag");
+		$('.'+name).append("<img src=./imgs/flags/"+imageName+" alt="+name+" width=\"150\" height=\"100\">");
 	}
 }
 

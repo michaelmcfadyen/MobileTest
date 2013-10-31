@@ -1,13 +1,13 @@
-//flags();
-
 /**********************************/
 /**********************************/
 /*Implement json checking in PHP!!*/
 /**********************************/
 /**********************************/
-var currentUser = "";	
+var currentUser = "no";	
+console.log("INSIDE INDEX.JS");
 
-$('.login .entrytext').click(function(){
+$('.entrytext.log').click(function(){
+	console.log("HERE");
 	if($('.signin').is(':hidden')){
 		$('.signin').slideDown("slow");
 	}
@@ -15,7 +15,8 @@ $('.login .entrytext').click(function(){
 		$('.signin').slideUp("slow");
 	}
 });
-$('.signup .entrytext').click(function(){
+$('.entrytext.sign').click(function(){
+	console.log("ANDHERE");
 	if($('.signupform').is(':hidden')){
 		$('.signupform').slideDown("slow");
 	}
@@ -39,34 +40,6 @@ $('.signout').click(function(){
 	$('.signin').show();
 });
 
-/*******************************************************/
-/* @flags adds flag img to <div class='[countryname]'>*/
-/******************************************************/
-function flags(){
-	var flags = getFlags();
-	
-	for(var i = 0; i < flags.length; i++){
-		var image = flags[i]["image"];
-		var name = flags[i]["name"];
-		$('.flags').append('<div class='+name+'>');
-		$('.'+name).append("<img src=./imgs/flags/"+image+" alt="+name+">");
-	}
-}
-
-/*******************************************************/
-/* @getFlags returns countries obj from json obj       */
-/******************************************************/
-function getFlags(){
-	var obj = null;
-
-	$.ajax({url:"./athl_coun.json", 
-	       async:false, 
-	       dataType:"json",
-               success:function(data){
-	       		obj = data.countries;
-	       }});
-	return obj;	
-}
 /*******************************************************/
 /* @getUsers returns users obj from json obj           */
 /******************************************************/
@@ -191,6 +164,7 @@ function login(){
 		currentUser = username;
 		$('button').css('display','block');
 		pageLoad(username);
+		console.log("SUCCESS");
 	}
 	else{
 		//username/password incorrect. Display error message

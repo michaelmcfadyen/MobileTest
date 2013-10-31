@@ -1,3 +1,3 @@
 {"athletes":[{"fname":"john","sname":"james","country":"scotland","sport":"baseball","image":"p.png"}],
-"countries":[{"name":"scotland","image":"scotlandflag.png"},{"name":"england", "image":""},{"name":"wales","image":""},{"name":"northernireland","image":""}]
+"countries":[{"name":"scotland","image":"scotland.png"},{"name":"england", "image":"englandflag.jpg"},{"name":"wales","image":"wales.jpg"},{"name":"northernireland","image":"ni.jpg"}]
 }

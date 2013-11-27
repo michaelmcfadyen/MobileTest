@@ -1,0 +1,69 @@
+\documentclass{l4proj}
+
+%
+% put any packages here
+%
+
+\begin{document}
+\title{HCI4 Coursework}
+\author{Michael McFadyen}
+\date{November 2013}
+\maketitle
+
+%
+%NOTE: if you include the educationalconsent (above) and your project is graded an A then
+%      it may be entered in the CS Hall of Fame
+%
+\tableofcontents
+%==============================================================================
+
+\chapter{Introduction}
+\pagenumbering{arabic}
+The first page, abstract and table of contents are numbered using Roman numerals. From now on pages are numbered
+using Arabic numerals. Therefore, immediately after the first call to $\backslash$chapter we need the call
+$\backslash$pagenumbering$\{$arabic$\}$ and this should be called once only in the document. 
+
+The first Chapter should then be on page 1. You are allowed 50 pages for a 30 credit project and 35 pages for a 
+20 credit report. This includes everything up to but excluding the appendices and bibliograph, i.e. this is a limit on
+the body of the report.
+
+You are not allowed to alter text size (it is currently 11pt) neither are you allowed to alter the margins.
+
+Note that in this example, and some of the others, you need to execute the following commands the first time you process the files.
+Multiple calls to pdflatex are required to resolve references to labels and citations. The file bib.bib is the bibliography file.
+
+
+\chapter{Design}
+
+\section{Prototypes}
+
+\section{Prototype Evaluation}
+
+\section{Redesigned Prototypes}
+
+
+\chapter{Implementation}
+
+\chapter{Evaluation}
+
+
+\chapter{Conclusion}
+\begin{verbatim}
+
+            > pdflatex example0
+            > bibtex example0
+            > pdflatex example0
+            > pdflatex example0
+
+\end{verbatim}
+
+%%%%%%%%%%%%%%%%
+%              %
+%  APPENDICES  %
+%              %
+%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%
+%   BIBLIOGRAPHY   %
+%%%%%%%%%%%%%%%%%%%%
+
+\end{document}

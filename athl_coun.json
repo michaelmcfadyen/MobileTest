@@ -1,3 +1,3 @@
 {"athletes":[{"fname":"john","sname":"james","country":"scotland","sport":"baseball","image":"p.png"}],
-"countries":[{"name":"scotland","image":"scotland.png"},{"name":"england", "image":"englandflag.jpg"},{"name":"wales","image":"wales.jpg"},{"name":"northernireland","image":"ni.jpg"}]
+"countries":[{"name":"scotland","image":"saltire.png"},{"name":"england", "image":"englandflag.jpg"},{"name":"wales","image":"wales.jpg"},{"name":"northernireland","image":"ni.jpg"},{"name":"canada", "image":"canada.jpg"},{"name":"australia", "image":"australia.jpg" },{"name":"india", "image":"india.jpg"},{"name":"southafrica", "image":"southafrica.jpg"},{"name":"newzealand","image":"newzealand.jpg"},{"name":"cyprus","image":"cyprus.jpg"},{"name":"cameroon","image":"cameroon.jpg"},{"name":"malysia","image":"malysia.jpg"}]
 }

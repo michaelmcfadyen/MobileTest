@@ -4,7 +4,6 @@
 /**********************************/
 /**********************************/
 var currentUser = "no";	
-console.log("INSIDE INDEX.JS");
 
 $('.entrytext.log').click(function(){
 	console.log("HERE");
@@ -179,3 +178,31 @@ function pageLoad(currentUser){
 	$('body').load("./assets/ajax/home.html");
 	$('.username').append(currentUser);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

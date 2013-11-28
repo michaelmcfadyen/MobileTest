@@ -1,4 +1,5 @@
 
+
 $('.flagpage').click(function(){
 	//$('.content').load('./assets/ajax/countries.html');
 	flags();

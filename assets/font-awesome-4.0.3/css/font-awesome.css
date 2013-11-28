@@ -12,6 +12,7 @@
   font-style: normal;
 }
 .fa {
+  text-rendering: auto;
   display: inline-block;
   font-family: FontAwesome;
   font-style: normal;

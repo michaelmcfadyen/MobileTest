@@ -39,6 +39,15 @@
 .nav ul li:active{
 	/*background-color:#EBEBEB;*/
 }
+.mainbar{
+	float:right;
+	width:10%;
+}
+.sidebar{
+	float:left;
+	width:90%;
+	height:20%;
+}
 .out{
 	float:right;
 	margin-right:5px;
@@ -47,6 +56,19 @@
 
 .flag{
 	margin:auto;
-	text-align:center;
-	
+	text-align:center;	
 }
+
+.flag .desc{
+	margin-top:0;
+}
+
+#chart{
+	margin: 0 auto;
+	left:0;
+}
+.arc path {
+  stroke: #fff;
+}
+
+

@@ -5,6 +5,10 @@ $('.flagpage').click(function(){
 	flags();
 });
 
+$('.homepage').click(function(){
+	$('.grid').empty();
+});
+
 $('.out').click(function(){
 	$('body').load('./assets/ajax/login.html');
 });
